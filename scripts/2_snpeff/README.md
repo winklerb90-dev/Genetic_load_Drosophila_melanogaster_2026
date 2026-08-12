@@ -7,4 +7,4 @@ data set is merged with the fitness essays. The following input files are requir
 - fitness_data.csv
 
 The final data set is used in the sections '4_statistics' and '5_visualisation':
-- 
+- dataset_snpeff_high_impact.csv
