@@ -36,9 +36,10 @@ conda activate >>insert_conda_env_name< # make sure packages are compiled before
 
 cd /lustre/project/account_name/data/maf_files/
 
-gzip -dk chr2L.maf.gz # change depending on chromosome file
+# change the files for each chromosome, e.g., this is for chromosome 2L files:
+gzip -dk chr2L.maf.gz 
 
-msa_view chr2L.maf  --refseq ../reference_fasta/ref_dm6_chr2L.fa  --out-format FASTA > chr2L_ref.fasta # change depending on chromosome file
+msa_view chr2L.maf  --refseq ../reference_fasta/ref_dm6_chr2L.fa  --out-format FASTA > chr2L_ref.fasta 
 
 sed -i 's/\*/N/g' chr2L_ref.fasta # replaces '*' with 'N' to label missing nucleotides
 
