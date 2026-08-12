@@ -11,28 +11,27 @@
 #SBATCH -o output_plink_recode2vcf.%j.out
 #SBATCH -e error_plink_recode2vcf.%j.err
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=>>email_name<<
+#SBATCH --mail-user=>>insert_email<<
 
 # load modules:
 module load lang/Anaconda3/2023.03
-conda activate /home/account_name/.conda/envs/bwa_env/bwa_env # plink already pre-compiled in this env
+conda activate /home/account_name/.conda/envs/conda_env_name # ensure that packages have been pre-compiled in the environment
 
-# manual/ reference:
+# Manual/ Reference:
 # https://www.cog-genomics.org/plink/
 
-# desc:
-# Beagle package needs vcf file for imputation, so recode bfiles to vcf
-# also RStudio analysis may need .vcf input
+# Description:
+# Beagle package needs a .vcf file for data imputation, so recode the PLINK format files to .vcf;
+# Also, .vcf files are required for further steps in RStudio
 
-# run task:
-cd ~/projects/m2_jgu-salmosex/drosophila_selection_project_2026/data/plink/output/
+# Run task:
+cd ~/projects/account_name/data/plink/output/
 
-plink   --bfile dgrp2_QC_all_lines_imputed_correct \
+plink   --bfile dgrp2_QC_all_lines \
         --keep-allele-order \
         --recode vcf \
-        --out dgrp2_QC_all_lines_imputed_correct
-
-plink   --bfile dgrp2_QC_all_lines_imputed_correct_ldpruned \
-	--keep-allele-order \
-	--recode vcf \
-	--out dgrp2_QC_all_lines_imputed_correct_ldpruned
+        --out dgrp2_QC_all_lines
+		
+# may use below instead after filtering and imputation as control (without sed part):
+# --bfile dgrp2_QC_all_lines_imputed_correct 
+# --out dgrp2_QC_all_lines_imputed_correct
