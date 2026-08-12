@@ -33,6 +33,7 @@
 #================================================#
 
 #=========[ + + + + Job Steps + + + + ]==========#
+module load lang/Anaconda3/2024.06-1
 source activate base
 conda activate >>insert_conda_env_name< # make sure packages are compiled before
 
