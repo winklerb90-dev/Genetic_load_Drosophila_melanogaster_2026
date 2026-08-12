@@ -43,6 +43,6 @@ msa_view chr2L.maf  --refseq ../reference_fasta/ref_dm6_chr2L.fa  --out-format F
 
 sed -i 's/\*/N/g' chr2L_ref.fasta # replaces '*' with 'N' to label missing nucleotides
 
-mv chr2L_ref.fasta ../new_fasta_files/
+mv chr2L_ref.fasta ../fasta_files/
 
 rm chr2L.maf
