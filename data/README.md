@@ -19,4 +19,8 @@ The project is based on publically available data. Given below are all the files
 -   chr2L.maf.gz, chr2R.maf.gz, chr3L.maf.gz, chr3R.maf.gz, chr4.maf.gz, chrX.maf.gz
     - contain multiple alignments across 123 insect species referenced to *Drosophila Melanogaster* per chromosome
     - can be found at [UCSC multiz124way](https://hgdownload.soe.ucsc.edu/goldenPath/dm6/multiz124way/maf/)
-- 
+    - required for section '3_gerp'
+- dm6.124way.sequenceNames.nh
+    - phylogenetic tree in newick format matching the .maf files above
+    - can be found at [UCSC multiz124way](https://hgdownload.soe.ucsc.edu/goldenPath/dm6/multiz124way/)
+    - required for section '3_gerp'
