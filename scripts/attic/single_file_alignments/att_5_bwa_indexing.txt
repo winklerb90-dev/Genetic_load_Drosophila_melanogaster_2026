@@ -1,0 +1,14 @@
+# Step Nr: 5
+# Task Title: Create supplementary BWA index files of D. melanogaster reference assembly
+# Script: -
+# Input data: data/reference_assembly/Drosophila_melanogaster.BDGP6.54.dna.toplevel.fa.gz
+#	      https://ftp.ensembl.org/pub/release-115/fasta/drosophila_melanogaster/dna/
+# Non-script commands:
+> module load bio/BWA/0.7.17
+> bwa-mem2 index Drosophila_melanogaster.BDGP6.54.dna.toplevel.fa.gz
+# Output data: .amb, .ann, .bwt, .pac, .sa files
+# Misc: run the bwa-mem2 command in a conda environment, as follows:
+> module load lang/Anaconda3/2023.03
+> conda create --name bwa_env   
+> conda activate bwa_env
+> conda install bioconda::bwa-mem2
