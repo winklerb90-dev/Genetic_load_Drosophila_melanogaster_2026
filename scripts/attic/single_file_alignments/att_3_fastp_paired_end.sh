@@ -22,7 +22,7 @@ module load bio/fastp/0.23.4-GCC-11.3.0
 # Applying filters to the raw fastq files (paired-end version)
 
 # Run task:
-for i in ~/projects/path/data/fastq_files/paired/*_1.fastq.gz
+for i in ~/projects/acc_name/path/data/fastq_files/paired/*_1.fastq.gz
 
 do
 
@@ -33,10 +33,10 @@ fastp   -i "$prefix"_1.fastq.gz \
 	-o "$prefix"_filtered_1.fastq.gz \
 	-O "$prefix"_filtered_2.fastq.gz \
 	-l 70 \ # read length filter: must be >= 70
-	--html ~/projects/path/data/fastq_files/filtered/paired/fastp_report_paired.html \
-	--json ~/projects/path/data/fastq_files/filtered/paired/fastp_report_paired.json \
+	--html ~/projects/acc_name/path/data/fastq_files/filtered/paired/fastp_report_paired.html \
+	--json ~/projects/acc_name/path/data/fastq_files/filtered/paired/fastp_report_paired.json \
         --report_title "fastp_report_drosmel_09042026"
 
 done
 
-mv ~/projects/path/data/fastq_files/paired/*_filtered_* ~/projects/path/data/fastq_files/filtered/paired/
+mv ~/projects/acc_name/path/data/fastq_files/paired/*_filtered_* ~/projects/acc_name/path/data/fastq_files/filtered/paired/
