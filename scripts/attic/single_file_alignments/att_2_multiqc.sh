@@ -22,7 +22,7 @@ module load bio/MultiQC/1.7-foss-2018a-Python-3.6.4
 # Summarises and combines the single files QC reports from FastQC into one report
 
 # Run task:
-multiqc ~/projects/path/data/fastqc_reports/filtered/
+multiqc ~/projects/acc_name/path/data/fastqc_reports/filtered/
 
-mv ~/projects/path/scripts/multiqc_data/ ~/projects/path/data/fastqc_reports/filtered/multiqc/
-mv ~/projects/path/scripts/multiqc_report.html ~/projects/path/data/fastqc_reports/filtered/multiqc/
+mv ~/projects/acc_name/path/scripts/multiqc_data/ ~/projects/path/data/fastqc_reports/filtered/multiqc/
+mv ~/projects/acc_name/path/scripts/multiqc_report.html ~/projects/path/data/fastqc_reports/filtered/multiqc/
