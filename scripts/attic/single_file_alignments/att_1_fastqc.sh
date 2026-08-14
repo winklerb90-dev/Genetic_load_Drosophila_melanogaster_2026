@@ -26,6 +26,6 @@ module load bio/FastQC/0.11.9-Java-11
 for i in ~/projects/path/data/fastq_files/filtered/paired/batch1/*
 do
 	fastqc i \
-	-o ~/projects/m2_jgu-salmosex/drosophila_selection_project_2026/data/fastqc_reports/filtered $i
+	-o ~/projects/path/data/fastqc_reports/filtered $i
 done
 
