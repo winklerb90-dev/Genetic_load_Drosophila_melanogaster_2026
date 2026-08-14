@@ -13,7 +13,7 @@ library(patchwork)
 ## Modelling 'SnpEff data set', that is, ----
 # Putatively deleterious variants filtered by high impact SnpEff annotations
 # import the dataset:
-snpeff_dataset <- read.csv("C:/path/coding_R/data/output/datasets/dataset_chen_method.csv")
+snpeff_dataset <- read.csv("C:/path/coding_R/data/output/datasets/dataset_snpeff_high_impact.csv")
 
 # Transform data set:
 snpeff_cleaned <-
