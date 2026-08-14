@@ -1,0 +1,12 @@
+# Step Nr: 12
+# Task Title: Preparation steps for SnpEff
+# Script: -
+# Input data: -
+# Non-script commands:
+> wget https://snpeff-public.s3.amazonaws.com/versions/snpEff_latest_core.zip 
+> unzip snpEff_latest_core.zip 
+> ~/../../mnt/c/Programme/Java/latest/jdk-26/bin/java.exe -jar snpEff.jar databases | grep -i drosophila_melanogaster 
+> ~/../../mnt/c/Programme/Java/latest/jdk-26/bin/java.exe -jar snpEff.jar download -v BDGP6.115 
+# Output data: local directory
+# Misc: done locally to avoid MOGON download + java version errors;
+#	transfer the locally created data/ directory to MOGON into the SnpEff directory 
