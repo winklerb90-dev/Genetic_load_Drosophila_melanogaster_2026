@@ -23,9 +23,9 @@ module load bio/FastQC/0.11.9-Java-11
 # Run in batches of hundred to speed up the process
 
 # Run task:
-for i in ~/projects/path/data/fastq_files/filtered/paired/batch1/*
+for i in ~/projects/acc_name/path/data/fastq_files/filtered/paired/batch1/*
 do
 	fastqc i \
-	-o ~/projects/path/data/fastqc_reports/filtered $i
+	-o ~/projects/acc_name/path/data/fastqc_reports/filtered $i
 done
 
