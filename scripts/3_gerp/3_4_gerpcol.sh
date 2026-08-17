@@ -27,6 +27,10 @@
 # formerly on: http://mendel.stanford.edu/SidowLab/downloads/gerp/
 # manual can be found at: https://web.archive.org/web/20240520010334/http://mendel.stanford.edu/sidowlab/downloads/GERP/index.html
 # gerpcol -h
+# For the version of tvkent:
+# download the gerp tar.gz file from:
+# https://github.com/tvkent/GERPplusplus
+# compile it and use that instead (but ran much slower for me)
 #================================================#
 
 #=========[ + + + + Description + + + + ]========#
