@@ -3,12 +3,16 @@
 # The modules starting with '#' are used in the attic section.
 
 module load lang/Anaconda3/2024.06-1
-conda create --name gerp_env
+conda create --name >choose_env_name<
 source activate base
-conda activate gerp_env
+conda activate >insert_env_name<
 conda install bioconda::phast==1.9.7
-conda install gerp # in step 5 installation of original version is described
+conda install bioconda::gerp==2.1 # in gerp section 'tvkent download' is described too
 conda install bioconda::bedtools==2.31.1
+conda install conda-forge::r-bigsnpr==1.12.21
+conda install bioconda::beagle==5.4_22Jul22.46e
+conda install bioconda::plink==1.90b6.21
 
-#> conda install bioconda::trimal==1.5.1
-#> conda install bioconda::iqtree==3.1.2
+# conda install bioconda::bwa-mem2==2.3
+# conda install bioconda::trimal==1.5.1
+# conda install bioconda::iqtree==3.1.2
