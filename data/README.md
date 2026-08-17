@@ -23,4 +23,5 @@ The project is based on publically available data. Given below are all the files
 - dm6.124way.sequenceNames.nh
     - phylogenetic tree in newick format matching the .maf files above
     - can be found at [UCSC multiz124way](https://hgdownload.soe.ucsc.edu/goldenPath/dm6/multiz124way/)
+    - > tr -d '\r\n' <dm6.124way.sequenceNames.nh> flat_dm6.124way.sequenceNames.nh.txt # converts into one line text file
     - required for section '3_gerp'
