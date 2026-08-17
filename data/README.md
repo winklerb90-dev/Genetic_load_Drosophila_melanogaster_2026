@@ -1,6 +1,6 @@
 # Details on data
 
-The project is based on publically available data. Given below are all the files necessary to run the scripts:
+The project is based on publically available data. Given below are all the files necessary to run the scripts and where to find them:
 - dgrp2.bed, dgrp2.bim, dgrp2.bam
   -  genotype calls at biallelic sites (bed), accompanied by two supplementary files (bim, fam)
   -  created by [Mackay et al, 2012](https://pmc.ncbi.nlm.nih.gov/articles/PMC3683990/)
