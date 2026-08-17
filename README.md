@@ -1,5 +1,5 @@
 # Genetic load in _Drosophila Melanogaster_, 2026
-Internship on the differences in the relationship between genetic load and fitness between male and female *Drosophila melanogaster*.\
+Internship on the difference in impact of genetic load on fitness between male and female *Drosophila melanogaster*.\
 Written at Johannes Gutenberg-University Mainz, under the supervision of Dr. Tom Keaney, by Benjamin Winkler.\
 \
 **Brief background on theory:**\
