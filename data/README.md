@@ -16,6 +16,7 @@ The project is based on publically available data. As most of the files are too 
   - line mean fitness measurements from early- and late-life male and female flies
   - created by [Wong & Holman, 2023](https://academic.oup.com/evolut/article/77/12/2642/7279223)
   - required for sections '2_snpeff' and '3_gerp'
+  - see 'create_annotations_file.R'
 -   chr2L.maf.gz, chr2R.maf.gz, chr3L.maf.gz, chr3R.maf.gz, chr4.maf.gz, chrX.maf.gz
     - contain multiple alignments across 123 insect species referenced to *Drosophila Melanogaster* per chromosome
     - can be found at [UCSC multiz124way](https://hgdownload.soe.ucsc.edu/goldenPath/dm6/multiz124way/maf/)
