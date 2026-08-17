@@ -6,6 +6,7 @@ The scripts have been written for Unix and R and are structured as followed:
 4. Statistical analysis with brms (R)
 5. Miscellaneous (R)
 
-The script 'conda_packages.sh' shows how to activate a conda environment and load the required packages in a slurm environment.  
+The script 'conda_packages.sh' shows how to activate a conda environment and load the required packages in a slurm environment.  This is necessary
+for some of the Unix scripts.
   
 The attic directory contains scripts which have been dismissed at some point during the project but are functional otherwise (like alignments of DGRP fasta files).
