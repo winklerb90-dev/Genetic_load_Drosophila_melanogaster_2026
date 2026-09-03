@@ -1,6 +1,6 @@
 # Details on workflow
 In this section multiple alignments are used to compare the neutral substitution rate to the observed substitutions to calculate a rejected substitution (RS) score
-per site. As input, MultipleAlignmentFiles (MFA) per chromosome across 123 insect species referenced to *Drosophila melanogaster* were used, 
+per site. As input, MultipleAlignmentFormat (MFA) per chromosome across 123 insect species referenced to *Drosophila melanogaster* were used, 
 as well as a matching phylogenetic tree file:
 - chr2L.maf.gz, chr2R.maf.gz, chr3L.maf.gz, chr3R.maf.gz, chr4.maf.gz, chrX.maf.gz
 - << insert tree file >>
@@ -13,7 +13,7 @@ RS scores per genomic location and will be used in the section '4_statistical_an
 - dataset_gerp_method.csv
 
 # Some notes on GERP++
-The documentation on GERP++ is very scarce. An online tool is provided by [UCSC](https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg19&g=allHg19RS_BW) but the
+Documentation on GERP++ is very scarce. An online tool is provided by [UCSC](https://genome.ucsc.edu/cgi-bin/hgTrackUi?db=hg19&g=allHg19RS_BW) but the
 [official documentation](http://mendel.stanford.edu/sidowlab/downloads/gerp/index.html) is dead. An archived version can be found 
 [here](https://web.archive.org/web/20240520010334/http://mendel.stanford.edu/sidowlab/downloads/GERP/index.html). Note, that there seems to be a bugged version
 as mentioned by [tvkent](https://github.com/tvkent/GERPplusplus), but using either the [Bioconda](https://anaconda.org/bioconda/gerp) or the debugged one didnt
