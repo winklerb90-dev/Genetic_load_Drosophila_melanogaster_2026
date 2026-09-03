@@ -3,7 +3,7 @@ In this section multiple alignments are used to compare the neutral substitution
 per site. As input, MultipleAlignmentFormat (MFA) per chromosome across 123 insect species referenced to *Drosophila melanogaster* were used, 
 as well as a matching phylogenetic tree file:
 - chr2L.maf.gz, chr2R.maf.gz, chr3L.maf.gz, chr3R.maf.gz, chr4.maf.gz, chrX.maf.gz
-- << insert tree file >>
+- dm6.124way.sequenceNames.nh
 
 The methods go through various data structuring and formatting steps. The gerpcol command is used to calculate RS scores, but produces genomic locations
 (the index of the output file) based on the length of the *D. melanogaster* sequence. Therefore, it is necessary to ensure that the sequence length 
